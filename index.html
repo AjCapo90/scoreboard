@@ -1,0 +1,33 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="block">
+                <h3 class="header">HOME</h3>
+                <div class="result black-div" id="home-result-block"><p class="score" id="home-score">0</p></div>
+                <div class="add-points">
+                    <div class="add-point" onclick="addOnePointToHome()"><p class="point">+1</p></div>
+                    <div class="add-point" onclick="addTwoPointsToHome()"><p class="point">+2</p></div>
+                    <div class="add-point" onclick="addThreePointsToHome()"><p class="point">+3</p></div>
+                </div>
+            </div>
+            <div class="block">
+                <h3 class="header">GUEST</h3>
+                <div class="result black-div" id="guest-result-block"><p class="score" id="guest-score">0</p></div>
+                <div class="add-points">
+                    <div class="add-point" onclick="addOnePointToGuest()"><p class="point">+1</p></div>
+                    <div class="add-point" onclick="addTwoPointsToGuest()"><p class="point">+2</p></div>
+                    <div class="add-point" onclick="addThreePointsToGuest()"><p class="point">+3</p></div>
+                </div>
+            </div>
+        </div>
+        <div id="leader-block"><p class="leader">Timer: <span id="time">0</span></p></div>
+        <div id="leader-block"><p class="leader">The leader is: <span id="leader-team">neither</span></p></div>
+        <div class="black-div game-block" id="new-game-block" onclick="newGame()"><p class="game-p">New Game</p></div>
+        <div class="black-div game-block invisible" id="pause-game-block" onclick="pauseTimer(interval)"><p class="game-p">Pause Game</p></div>
+        <div class="black-div game-block invisible" id="resume-game-block" onclick="resumeTimer()"><p class="game-p">Resume Game</p></div>
+        <script src="index.js"></script>
+    </body>
+</html>

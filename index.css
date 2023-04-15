@@ -1,0 +1,101 @@
+@font-face {
+    src: url('timer.ttf');
+    font-family: timer;
+}
+
+body {
+    margin: 0;
+    font-family: timer, serif;
+    background-color: #1B244A;
+    height: 100vh;
+}
+
+.header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #EEE;
+    text-shadow: 0px 0px 5px black;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.black-div {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.result {
+    width: 155px;
+    height: 120px;
+    box-sizing: border-box;
+}
+
+.score {
+    font-size: 90px;
+    color: #F94F6D;
+}
+
+.add-points {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-point {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #9AABD8;
+    margin: 25px 3px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.point {
+    color: #9AABD8;
+    font-size: 18px;
+}
+
+.game-block {
+    width: 195px;
+    height: 45px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.game-p {
+    font-size: 26px;
+    color: #F94F6D;
+}
+
+#leader-block {
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #EEE;
+    margin-bottom: 15px;
+}
+
+#leader-team {
+    color: #F94F6D;
+    text-transform: uppercase;
+}
+
+.invisible {
+    display: none;
+}
